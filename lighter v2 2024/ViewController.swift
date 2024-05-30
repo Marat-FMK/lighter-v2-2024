@@ -16,10 +16,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redView.layer.cornerRadius = 90
-        yellowView.layer.cornerRadius = 90
-        greenView.layer.cornerRadius = 90
-        
+        redView.layer.cornerRadius = redView.frame.size.width / 1.2
+        yellowView.layer.cornerRadius = yellowView.frame.size.width / 2
+        greenView.layer.cornerRadius = greenView.frame.size.width / 3
+
         redView.alpha = 0.5
         yellowView.alpha = 0.5
         greenView.alpha = 0.5
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
             startButtonText.setTitle("STOP", for: .normal)
         case .allColorOff:
             greenView.alpha = 0.5
-            startButtonText.setTitle("START", for: .normal)
+            startButtonText.setTitle("Start", for: .normal)
             lightOn = .red
         }
     }
