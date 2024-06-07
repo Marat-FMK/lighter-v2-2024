@@ -51,7 +51,7 @@ class ViewController: UIViewController {
             yellowView.alpha = 0.5
             greenView.alpha = 1
             lightOn = .allColorOff
-            startButtonText.setTitle("STOP", for: .normal)
+            startButtonText.setTitle("STOPPP", for: .normal)
         case .allColorOff:
             greenView.alpha = 0.5
             startButtonText.setTitle("StArT", for: .normal)
